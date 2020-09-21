@@ -1,0 +1,17 @@
+server:
+  port: 8000
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.25.128:3306/bank2?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: root
+rocketmq:
+  producer:
+    group: producer_bank2
+  name-server: 192.168.25.128:9876
+logging:
+  level:
+    root: info
+    org.springframework.web: info
+    com.chenghao: debug

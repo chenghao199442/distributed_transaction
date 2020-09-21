@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: alipay-server
+  datasource:
+    url: jdbc:mysql://192.168.25.128:3306/alipay?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  rabbitmq:
+    host: 192.168.25.128
+    port: 5672
+    username: admin
+    password: 123456
+    virtual-host: /
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
